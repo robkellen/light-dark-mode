@@ -38,11 +38,11 @@ function switchTheme(event) {
   if (event.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
-    toggleDarkLightMode(DARK_THEME);
+    toggleDarkLightMode(true);
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
-    toggleDarkLightMode(LIGHT_THEME);
+    toggleDarkLightMode(false);
   }
 }
 
